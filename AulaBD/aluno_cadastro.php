@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluno Cadastro</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1> Cadastro de Alunos </h1>
-    <form name="Enviar" method="POST" action="aluno_cadastro.php">
-        <fieldset>
-            <p>Informe o nome do aluno:</p>
-            <input type="text" name="curso">
 
-            <p>Escolha o curso</p>
-            <select name="curso">
-            <option value="Escolha o curso">Escolha o curso</option>
+<?php include "menu.php" ?>
+   <div class="conteudo">
+
+    <h3> Cadastro de Alunos </h3>
+    <form method="post" action="#">
+
+            <p>Informe o nome do aluno:<br>
+            <input type="text" name="nome">
+            </p>
+            <p>Informe a cidade:<br>
+            <input type="text" name="cidade">
+            </p>
+
+            <p>Informe o estado:<br>
+            <input type="text" name="estado">
+            </p>
+            <p>
+
+            <input type="submit" name="enviar" value="Cadastrar"> 
+            </p>
+    </form>
+</div>
+
+<body>
+    <html>
+
           
-            </select>
-
-            <br>
-            <br>
-            <input type="submit" name="Enviar" value="Cadastrar Aluno"> 
-        </fieldset>
